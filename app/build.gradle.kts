@@ -46,6 +46,7 @@ dependencies {
     implementation("com.journeyapps:zxing-android-embedded:4.3.0")
     // Add this to your Spring Boot build.gradle dependencies if pom.xml is missing
     implementation("com.google.zxing:javase:3.5.3")
+    implementation(libs.androidx.cardview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
