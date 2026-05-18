@@ -58,11 +58,14 @@ public class MainActivity extends AppCompatActivity {
 
                     Toast.makeText(MainActivity.this, "Login Successful! 🎉", Toast.LENGTH_SHORT).show();
 
-                    // Move to the Scanner Screen
-                    startActivity(new Intent(MainActivity.this, ScannerActivity.class));
+                    Intent intent = new Intent(MainActivity.this, ScannerActivity.class);
+                    startActivity(intent);
+                    finish();
                 } else {
                     Toast.makeText(MainActivity.this, "Invalid Credentials ❌", Toast.LENGTH_SHORT).show();
                 }
+                // Inside performLogin onResponse
+                // Closes Login screen so user can't "Go Back" to it
             }
 
             @Override
